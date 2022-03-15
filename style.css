@@ -10,10 +10,40 @@
 html, body {
     height: 100%;
 }
+
 header {
     background-color: rgba(37, 134, 218, 0.801);
     height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;   
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    /* align-self: flex-start; */
     
+}
+
+header .button {
+    background-color: rgba(11, 42, 143, 0.856);
+}
+
+.encrage {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
@@ -22,20 +52,8 @@ footer {
     height: 125px;
     position: absolute;
     bottom: 0px;
-}
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
 }
-
-.logo {
-    width: 100px;
-    height: 100px;
-    
-}
-
 /* Media Queries*/
 @media only screen and (min-with: 600px) {
     
