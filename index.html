@@ -21,27 +21,48 @@
             </div>
             <h1>Espoir Sportif de Moussy-Le-Neuf</h1>
             
-            <button class="button">
+            <button id="navbar" class="nav">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="/blog/event.html">Événement</a></li>
-                        <li><a href="/blog/contact.html">Contacts</a></li>
-                        <li><a href="/blog/acitivité.html">Nos activitées</a></li>
+                        <li>
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="/blog/event.html">Événement</a>
+                        </li>
+                        <li>
+                            <a href="/blog/contact.html">Contacts</a>
+                        </li>
+                        <li>
+                            <a href="/blog/acitivité.html">Nos activitées</a>
+                        </li>
                     </ul>
+                    
                 </nav>
+                <a class="icon" onclick="myFonction()">&#9776;</a>
             </button>   
         </header>
+        <script>
+            function myFonction() {
+                    var x = document.getElementById("navbar")
+                    if (x.className === "nav"){
+                        x.className += "responsive";
+                    } else {
+                        x.className = "nav"
+                    }
+                }
+        </script>
         <!-- Fin du header -->
-
+        
+        <!-- Début du main -->
         <main>
             <!-- Boutons d'encrage -->
-            <div>
-                <nav class="encrage">
-                    <ul>
-                        <li></li><a href="#Qui_sommes-nous">Qui sommes-nous</a>
-                        <li><a href="#Nos_infrastructures">Nos infrastructures</a></li>
-                        <li><a href="#Découvrez_nos_activitées">Découvrez nos activitées</a></li>
+            <div >
+                <nav>
+                    <ul class="encrage">
+                        <li class="btn"><a href="#Qui_sommes-nous" >Qui sommes-nous</a></li>
+                        <li class="btn"><a href="#Nos_infrastructures" >Nos infrastructures</a></li>
+                        <li class="btn"><a href="#Découvrez_nos_activitées" >Découvrez nos activitées</a></li>
                     </ul>
                     
                 </nav>
@@ -54,20 +75,29 @@
                     <div class="title-theme">
                         <h2 id="Evenement">Événements</h2>
                     </div>
-                    <div>
+                    <div class="event">
                         <div class="card-event">
                             <div>
-                                <img src="images/event_tennis.jpg" alt="Tournoi balle verte">
+                                <div class="img-card">
+                                    <img src="images/event_tennis.jpg" alt="Tournoi balle verte">
+                                </div>
                             </div>
+                            
                             <div>
                                 <h3>Tournoi balle verte</h3>
                                 <p>Catégorie 8-10 ans <br>
-                                Mixte</p>
-                                <a href="">EN SAVOIR PLUS</a>
+                                    Mixte</p>
+                                    <a href="">EN SAVOIR PLUS</a>
+                                </div>
                             </div>
+                        </div>         
+                        <div class="card-event">
                             <div>
-                                <img src="images/event_foot.jpg" alt="ESMvsVémars">
+                                 <div class="img-card">
+                                    <img src="images/event_foot.jpg" alt="ESMvsVémars">
+                                </div>
                             </div>
+                           
                             <div>
                                 <h3>Prochain match de Foot</h3>
                                 <p>L'ESM reçoit le FC Vémars <br>
@@ -77,10 +107,7 @@
 
                         <div>
 
-                    </div>
-                    </div>
-                    
-                    
+                    </div>                    
                 </div>
 
 
