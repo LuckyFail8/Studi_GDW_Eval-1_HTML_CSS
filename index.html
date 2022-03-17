@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/LogoMLN.png">
     <!-- Intégration de la librairie Boodstrap que je ne souhaite pas utiliser 
     <link rel="stylesheet" href="bootstrap.min.css"> -->
     <link rel="stylesheet" href="style.css">
@@ -12,7 +13,7 @@
 <body>
     <div class="container">
         <!-- Début du header -->
-        <header>
+        <header class="banniere">
             <div>
                 <div class="logo">
                     <img src="/images/LogoMLN.png" alt="Ecusson Moussy-Le-Neuf">
@@ -20,78 +21,203 @@
             </div>
             <h1>Espoir Sportif de Moussy-Le-Neuf</h1>
             
-            <button class="button">
+            <button id="navbar" class="nav">
                 <nav>
                     <ul>
-                        <li>Accueil</li>
-                        <li>Événement</li>
-                        <li>Contacts</li>
+                        <li>
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="/blog/event.html">Événement</a>
+                        </li>
+                        <li>
+                            <a href="/blog/contact.html">Contacts</a>
+                        </li>
+                        <li>
+                            <a href="/blog/acitivité.html">Nos activitées</a>
+                        </li>
                     </ul>
+                    
                 </nav>
+                <a class="icon" onclick="myFonction()">&#9776;</a>
             </button>   
         </header>
+        <script>
+            function myFonction() {
+                    var x = document.getElementById("navbar")
+                    if (x.className === "nav"){
+                        x.className += "responsive";
+                    } else {
+                        x.className = "nav"
+                    }
+                }
+        </script>
         <!-- Fin du header -->
-
-        <div>
+        
+        <!-- Début du main -->
+        <main>
             <!-- Boutons d'encrage -->
-            <div>
-                <nav class="encrage">
-                    <ul>
-                        <li><a href="#Qui_sommes-nous">Qui sommes-nous</a></li>
-                        <li><a href="#Nos_infrastructures">Nos infrastructures</a></li>
-                        <li><a href="#Découvrez_nos_activitées">Découvrez nos activitées</a></li>
+            <div >
+                <nav>
+                    <ul class="encrage">
+                        <li class="btn"><a href="#Qui_sommes-nous" >Qui sommes-nous</a></li>
+                        <li class="btn"><a href="#Nos_infrastructures" >Nos infrastructures</a></li>
+                        <li class="btn"><a href="#Découvrez_nos_activitées" >Découvrez nos activitées</a></li>
                     </ul>
                     
                 </nav>
             </div>
             <!-- Fin des Boutons d'encrage -->
-                        
+            
             <div>
-                Dolore velit nulla consectetur ex labore non minim dolor duis ut irure. Quis 
-                occaecat cupidatat qui nostrud aliqua quis officia ea. Cillum commodo pariatur elit 
-                in deserunt eu voluptate. Ad nisi voluptate occaecat consectetur esse ea deserunt.
+                
+                <div>
+                    <div class="title-theme">
+                        <h2 id="Evenement">Événements</h2>
+                    </div>
+                    <div class="event">
+                        <div class="card-event">
+                            <div>
+                                <div class="img-card">
+                                    <img src="images/event_tennis.jpg" alt="Tournoi balle verte">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h3>Tournoi balle verte</h3>
+                                <p>Catégorie 8-10 ans <br>
+                                    Mixte</p>
+                                    <a href="">EN SAVOIR PLUS</a>
+                                </div>
+                            </div>
+                        </div>         
+                        <div class="card-event">
+                            <div>
+                                 <div class="img-card">
+                                    <img src="images/event_foot.jpg" alt="ESMvsVémars">
+                                </div>
+                            </div>
+                           
+                            <div>
+                                <h3>Prochain match de Foot</h3>
+                                <p>L'ESM reçoit le FC Vémars <br>
+                                Championnat</p>
+                                <a href="">EN SAVOIR PLUS</a>
+                            </div>
 
-                Velit aliqua sunt ex laboris ex laboris mollit culpa qui ullamco dolore. Mollit 
-                deserunt elit ex quis quis commodo voluptate elit elit voluptate non Lorem cupidatat
-                officia. Dolor anim magna non cillum ipsum. Commodo culpa ea elit aliquip nulla 
-                consequat magna eiusmod culpa dolor. Excepteur cupidatat laborum commodo culpa ut 
-                sit. Non consectetur Lorem occaecat excepteur anim cupidatat cillum consequat 
-                adipisicing fugiat sit tempor reprehenderit. Elit eiusmod adipisicing aliqua 
-                deserunt ad velit aute incididunt aliquip nulla tempor magna veniam.
+                        <div>
 
-                Anim qui reprehenderit fugiat pariatur excepteur esse ut. Ullamco tempor quis 
-                cupidatat aute nulla ut quis adipisicing nostrud. Ullamco nostrud labore laborum 
-                aliquip ut est occaecat sit eu sunt ullamco minim. Officia Lorem voluptate amet eu 
-                adipisicing. Sunt magna ea adipisicing culpa ea aliquip. Proident anim commodo 
-                cupidatat do Lorem reprehenderit dolor enim nulla enim excepteur ad reprehenderit. 
-                Qui enim ad consectetur duis esse veniam reprehenderit enim excepteur irure duis 
-                consequat aliqua Lorem.
+                    </div>                    
+                </div>
 
-                Dolore ex elit consequat et qui esse sint laboris. Lorem sit occaecat est pariatur 
-                irure labore officia labore officia nostrud eiusmod commodo eu velit. Enim tempor eu
-                magna incididunt deserunt minim dolore proident. Nisi mollit cupidatat nisi ipsum 
-                deserunt tempor est anim consectetur ad. Minim quis mollit ipsum quis sunt deserunt
-                dolore minim nostrud ex et.
 
                 <div>
                     <h2 id="Qui_sommes-nous">Qui sommes-nous</h2>
+                    <p><strong>L'Espoir sportif Moussy-Le-Neuf</strong> est une association sportive de type loi 1901, déclarée en préfecture et bénéficiant d'un agrément sportif. 
+                    Créer en 1945 l'ESM est un club Omnisports regroupant 14 activité sportives et environ 640 adhérents chaque année.</p>
+                    
+                    <p>L'association est dirigé par un bureau directeur élu tout les 4 ans et dont le président actuel est Laurent ROUDAUT. 
+                    Chaque section dépendante juridiquement du club omnisports fonctionne comme une association unique avec un bureau élu par une assemblée générale mais qui n'a aucune existence juridique détenu par l'association "Espoir sportif Moussy-Le-Neuf". </p>
+                    
+                    <p>L'adresse administrative de l'Espoir sportif Moussy-Le-Neuf se trouve à la mairie de la ville, Pl. Charles de Gaulle.
+                    La ville de Moussy-Le-Neuf est par ailleurs le principal partenaire du CSM avec une subvention de fonctionnement importante et la mise à disposition de l'ensemble des structures sportives de la ville pour les entrainements et les compétitions mais aussi l'aide de l'ensemble des services municipaux.</p> 
+                    <p>Avec un budget de presque 1 millions d'euros et environ 640 adhérents l'ESM est l'un des plus importants club omnisports du département.
+                    Chaque année de nombreuses compétitions d'envergure départementale, régionale ou encore Nationale comme les Foulées Moussignole viennent animer la ville de Moussy-Le-Neuf pour en faire l'une des plus sportive du département.</p>
                 </div>
-                <div>
+                <div class="bloc-infra">
                     <h2 id="Nos_infrastructures">Nos infrastructures</h2>
+                    <p>Elles sont à la disposition des differentes association</p>
+
+                    <div class="contenu-infra">
+                        <div><h3>La salle du chêne</h3></div>
+                        <div class="image-structure">
+                            <img src="/images/Salle du chêne.webp" alt="La salle du chêne">
+                        </div>
+                    </div>
+
+                    <div class="contenu-infra">
+                        <div><h3>Complexe sportif de l'Érable</h3></div>
+                        <div class="image-structure">
+                            <img src="/images/complexe sportif de l'érable.jpg" alt="Complexe sportif de l'Érable">
+                        </div>
+                    </div>
+
+                    <div class="contenu-infra">
+                        <div><h3>Le Tennis Club Moussy-Le-Neuf</h3></div>
+                        <div class="image-structure">
+                            <img src="/images/moussy-le-neuf-tennis.jpg" alt="Le Tennis Club Moussy-Le-Neuf">
+                        </div>
+                    </div>
+
                 </div>
                 <div>
-                    <h2 id="Découvrez_nos_activitées">Découvrez nos activitées</h2>
+                    <div>
+                        <h2 id="Découvrez_nos_activitées">Découvrez nos activitées</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                Tennis
+                            </div>
+                            <figure>
+                                <img src="images/LogoTennis.png" alt="Logo Tennis club Moussy-Le-Neuf">
+                            </figure>
+                            <a href=""></a>
+                        </div>
+                        <div>
+                            <div>
+                                Football
+                            </div>
+                            <figure>
+                                <img src="images/LogoFoot.png" alt="Logo ESM Football">
+                            </figure>
+                            <a href=""></a>
+                        </div>
+                        <div>
+                            <a href="">Voir Toute les activitées</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
-            <!-- Partie tennis -->
-            <div></div>
-            <!-- Partie foot -->
-            <div></div>
-        </div>
+            
+        </main>
 
         <!-- Début du footer -->
-        <footer>Footer</footer>
+        <footer>
+
+            <div class="contenu-footer">
+
+                <div class="bloc footer-service">
+                    <h3>Nos réseaux sociaux</h3>
+                    <ul class="liste-service">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+
+                <div class="bloc footer-service">
+                    <h3>Nos réseaux sociaux</h3>
+                    <ul class="liste-service">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+
+                <div class="bloc footer-service">
+                    <h3>Nos réseaux sociaux</h3>
+                    <ul class="liste-service">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
         <!-- Fin du footer -->
     </div>
 </body>
