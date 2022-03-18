@@ -12,6 +12,7 @@
 
 html, body {
     height: 100%;
+    line-height: 1.3;
 }
 /* --- Fonts --- */
 
@@ -22,6 +23,7 @@ h1 {
 h2 {
     color: #2A4359;
     margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 h3 {
@@ -126,12 +128,8 @@ main {
     margin-bottom: 50px;
 }
 
-.event {
-    display: flex;
-    flex-direction: row;
-}
 
-.card-event {
+/* .card-event {
     border: 3px solid #D91A3D;
     background: white;
     color: #D91A3D;
@@ -146,19 +144,57 @@ main {
     display: flex ;
     flex-direction: column;
     /* align-items: center; */
-    text-align: justify;
+    /*text-align: justify;
     overflow: hidden;
     
+} */
+.card-event {
+    display: inline-block;
+    background: lightblue;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card-event .top-card {
+    background: lightcoral;
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-event .top-card .img-card {
+    position: absolute;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.card-event .bottom-card {
+    text-align: left;
+    padding: 30px 20px;
 }
 
 .card-event:hover{
     box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.644);
 }
 
-.card-event img {
+/* .card-event img {
     max-height: 400px;
     margin: auto;
     justify-content: center;
+} */
+
+.card-event a {
+    color: #BFB411;
+    
+}
+
+.paragraphe {
+    background: #bccddb;
+    border-radius: 10px;
+    padding: 15px 10px 15px;
 }
 
 .card-infra {
