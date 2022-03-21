@@ -30,6 +30,20 @@ h3 {
     color: #0F3759 ;
 }
 
+a {
+    color: #BFB411;
+}
+
+a:hover {
+    color: #F2E416;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
 
 img {
     max-width: 100%;
@@ -83,7 +97,7 @@ header .navresponsive {
 
 /* --- Fin du header --- */
 
-/* --- main --- */
+/* -------------- main -------------- */
 
 main {
     padding: 10px;
@@ -138,14 +152,14 @@ main {
     justify-content: space-evenly;
 }
 
-/* --- CSS des cards --- */
+/* ------- CSS des cards ------- */
 .card-event, .card-infra {
     display: inline-block;
     width: 300px;
     height: 400px;
     border-radius: 10px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
 }
 
@@ -179,10 +193,6 @@ main {
     max-height: 220px;
 }
 
-.card-event a {
-    color: #BFB411;
-    
-}
 
 .card-infra{
     border: 3px solid #BFB411;
@@ -190,9 +200,13 @@ main {
 /* --- Fin du CSS des cards --- */
 
 .paragraphe {
-    background: #bccddb;
+    background: #eaecef;
     border-radius: 10px;
-    padding: 15px 10px 15px;
+    padding: 15px 12px 15px;
+}
+
+.paragraphe p {
+    margin-bottom: 5px;
 }
 
 
@@ -202,11 +216,33 @@ footer {
     background-color: rgba(8, 25, 41, 0.993);
     width: 100%;
     height: auto;
-    padding: 10px ;
+    padding: 10px;
+    color: #BFB411;
     /* position: absolute;
     bottom: 0px; */
-
 }
+
+footer h3 {
+    text-transform: uppercase;
+    color: #2585D9;
+}
+
+.btnsub {
+    display: block;
+    width: auto;
+    padding: 1px 3px;
+    /* border: 3px solid #BFB411; */
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #BFB411;
+    background: #0F3759;
+}
+
+.news {
+    display: inline;
+}
+
+
 /* Media Queries*/
 @media only screen and (min-with: 600px) {
     
