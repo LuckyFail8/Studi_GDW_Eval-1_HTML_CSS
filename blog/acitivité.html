@@ -5,39 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/LogoMLN.png">
-    <!-- Intégration de la librairie Boodstrap que je ne souhaite pas utiliser 
+    <!-- Intégration de la librairie Boodstrap que je ne souhaite pas utiliser pour me familliariser 
+        avec flexbox et css grid
     <link rel="stylesheet" href="bootstrap.min.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/activité.css">
+    <link rel="stylesheet" href="/style/header_footer.css">
     <title>ES Moussy</title>
 </head>
 <body>
-    <div>
-        <header class="banniere">
-            <div>
+    <div class="container">
+        <!-- Début du header -->
+        <nav>
+            <div class="area1">
                 <div class="logo">
                     <img src="/images/LogoMLN.png" alt="Ecusson Moussy-Le-Neuf">
                 </div>
             </div>
-            <h1>Espoir Sportif de Moussy-Le-Neuf</h1>
-            
-            <button class="button">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="/blog/event.html">Événement</a></li>
-                        <li><a href="/blog/contact.html">Contacts</a></li>
-                        <li><a href="/blog/acitivité.html">Nos activitées</a></li>
+            <div class="area2">
+                <div class="titre">
+                    <label class="assoc">
+                        <div>Espoir Sportif <br>de<br> Moussy-Le-Neuf
+                        </div>
+                    </label>
+                </div>
+                <div class="navbar">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i>
+                            <div class="burger">
+                                <span></span>
+                            </div>
+                        </i>
+                    </label>
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Accueil</a>
+                            <ul class="sous-menu">
+                                <li><a href="">Qui somme sous</a></li>
+                                <li><a href="">Nos infrastructure</a></li>
+                                <li><a href="">Nos activitées</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/blog/event.html">Événement</a>
+                            <ul class="sous-menu">
+                                <li><a href="">Tennis</a></li>
+                                <li><a href="">Foot</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/blog/contact.html">Contacts</a>
+                        </li>
+                        <li>
+                            <a class="active" href="/blog/acitivité.html">Nos activitées</a>
+                        </li>
                     </ul>
-                </nav>
-            </button>   
-        </header>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin du header -->
+            <div><h1>ACTIVITEE</h1></div>
+        <!-- Début du main -->
         <main>
-            <div>
-                
-                <h1>Nos activitées</h1>
+            
+        </main>
+
+        <!------------ Début du footer ------------>
+        <footer>
+
+            <div class="contenu-footer">
+
+                <div class="footer-service">
+                    <h3>Contact</h3>
+                    <ul class="liste-service">
+                        <li>Laurent Roudaut</li>
+                        <li>President de l'ESM</li>
+                        <li><a href="tel:+33668866886">06.68.86.68.86</li>
+                        <li><a href="mailto:esm.lebureau@email.com">esm.lebureau@email.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-service">
+                    <h3>Nos réseaux sociaux</h3>
+                    <ul class="liste-social">
+                        <li>
+                            <a href="https://www.facebook.com/places/A-faire-a-Moussy-le-Neuf/105662939467023/" target="_blank" ><img class="icon-social" src="/images/icons8-facebook.svg" alt="Facebook icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/EsNeuf" target="_blank"><img class="icon-social" src="/images/icons8-twitter.svg" alt="Twitter icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=fr" target="_blank"><img class="icon-social" src="/images/icons8-instagram.svg" alt="instagram icon"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-service">
+                    <h3>Newsletter</h3>
+                    <form>
+                        <div class="news">
+                            <input type="email" name="mail" placeholder="Votre mail..."/>
+                            <input class="btnsub" type="reset" value="M'abonner"/>
+                        </div>
+                    </form>
+                </div>
 
             </div>
-        </main>
+        </footer>
+        <!------------ Fin du footer ------------>
     </div>
 </body>
 </html>
