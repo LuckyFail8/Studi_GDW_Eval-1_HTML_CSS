@@ -37,9 +37,7 @@ a:hover {
 }
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+    flex-wrap: wrap;    
 }
 
 
@@ -225,6 +223,9 @@ footer h3 {
 .news {
     justify-content: flex-start;
 }
+.newsletter{
+    padding: 4px 0px 4px 3px;
+}
 .icon-social {
     width: 40px;
     height: 40px;
@@ -236,7 +237,7 @@ footer h3 {
 .btnsub {
     display: block;
     width: auto;
-    padding: 1px 3px;
+    padding: 2px 4px;
     border-radius: 4px;
     text-transform: uppercase;
     color: #BFB411;
@@ -356,6 +357,12 @@ footer h3 {
     }
     footer img:hover{
         transform: scale(1.2);
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    .sous-menu li a{
+        font-size: 14px;
     }
 }
 
