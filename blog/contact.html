@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/LogoMLN.png">
-    <!-- Intégration de la librairie Boodstrap que je ne souhaite pas utiliser pour me familliariser 
-        avec flexbox et css grid
-    <link rel="stylesheet" href="bootstrap.min.css"> -->
-    <link rel="stylesheet" href="../style/contact.css">
-    <link rel="stylesheet" href="/style/header_footer.css">
-    <title>ES Moussy</title>
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../images/LogoMLN.png">
+        <!-- <link rel="stylesheet" href="../bootstrap.min.css"> -->
+        <link rel="stylesheet" href="../style/contact.css">
+        <link rel="stylesheet" href="/style/header_footer.css">
+        <title>ES Moussy</title>
+    </head>
+    <body>
         <!-- Début du header -->
         <nav>
             <div class="area1">
@@ -39,11 +36,11 @@
                     </label>
                     <ul class="menu">
                         <li>
-                            <a href="index.html">Accueil</a>
+                            <a href="../index.html">Accueil</a>
                             <ul class="sous-menu">
-                                <li><a href="">Qui somme sous</a></li>
-                                <li><a href="">Nos infrastructure</a></li>
-                                <li><a href="">Nos activitées</a></li>
+                                <li><a href="../index.html#Qui_sommes-nous">Qui somme sous</a></li>
+                                <li><a href="../index.html#Nos_infrastructures">Nos infrastructure</a></li>
+                                <li><a href="../index.html#Découvrez_nos_activitées">Nos activitées</a></li>
                             </ul>
                         </li>
                         <li>
@@ -64,11 +61,103 @@
             </div>
         </nav>
         <!-- Fin du header -->
-        <div><h1>CONTACT</h1></div>
         <!-- Début du main -->
         <main>
-            
-        </main>
+                <div class="container-contact">
+                    <section>
+                        <div>
+                            <p>Pour toute demande, n’hésitez pas à compléter le formulaire ci-dessous. Nous vous
+                                répondrons dans les meilleurs délais.</p>
+                        </div>
+                        <form action="">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <div class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                    </div>
+                                    <span><input class="input" type="text"                  placeholder="Nom"></span>
+                                </div>
+                                <div class="form-input">
+                                    <div class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        </svg>
+                                    </div>
+                                    <span><input class="input" type="text" placeholder="Prénom"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <div class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                        </svg>
+                                    </div>
+                                    <span><input class="input" type="text" placeholder="Votre numéro"></span>
+                                </div>
+                                <div class="form-input">
+                                    <div class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                        </svg>
+                                    </div>
+                                    <span><input class="input" type="text" placeholder="Votre mail"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <div class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </div>
+                                    <span><input class="input" type="text" placeholder="Sujet"></span>
+                                </div>
+                                <div class="form-input">
+                                    <div class="input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                        </svg>
+                                    </div>
+                                    <select class="input" name="raison" id="raison">
+                                        <option value="Formation">Formation</option>
+                                        <option value="Affiliation">Affiliation</option>
+                                        <option value="Trouver un club">Trouver un club</option>
+                                        <option value="Autre">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <div class="input-icon-area">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
+                                            <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                        </svg>
+                                    </div>
+                                    <p>
+                                        <textarea name="Message" id="message" cols="40" rows="10" placeholder="Votre message"></textarea>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <span><input type="checkbox" name="frites" id="frites" /> <label for="frites">Je confirme avoir lu et accepté la politique de confidentialité du site (Voir la politique de confidentialité)</label><br /></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <input class="btn-envoyer" type="reset" value="Envoyer">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </main>
 
         <!------------ Début du footer ------------>
         <footer>
@@ -89,13 +178,17 @@
                     <h3>Nos réseaux sociaux</h3>
                     <ul class="liste-social">
                         <li>
-                            <a href="https://www.facebook.com/places/A-faire-a-Moussy-le-Neuf/105662939467023/" target="_blank" ><img class="icon-social" src="/images/icons8-facebook.svg" alt="Facebook icon"></a>
+                            <a href="https://www.facebook.com/places/A-faire-a-Moussy-le-Neuf/105662939467023/" 
+                            target="_blank" ><img class="icon-social" src="/images/icons8-facebook.svg" 
+                            alt="Facebook icon"></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/EsNeuf" target="_blank"><img class="icon-social" src="/images/icons8-twitter.svg" alt="Twitter icon"></a>
+                            <a href="https://twitter.com/EsNeuf" target="_blank"><img class="icon-social" 
+                                src="/images/icons8-twitter.svg" alt="Twitter icon"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/?hl=fr" target="_blank"><img class="icon-social" src="/images/icons8-instagram.svg" alt="instagram icon"></a>
+                            <a href="https://www.instagram.com/?hl=fr" target="_blank"><img class="icon-social" 
+                                src="/images/icons8-instagram.svg" alt="instagram icon"></a>
                         </li>
                     </ul>
                 </div>
@@ -104,7 +197,7 @@
                     <h3>Newsletter</h3>
                     <form>
                         <div class="news">
-                            <input type="email" name="mail" placeholder="Votre mail..."/>
+                            <input class="newsletter" type="email" name="mail" placeholder="Votre mail..."/>
                             <input class="btnsub" type="reset" value="M'abonner"/>
                         </div>
                     </form>
@@ -113,6 +206,5 @@
             </div>
         </footer>
         <!------------ Fin du footer ------------>
-    </div>
-</body>
+    </body>
 </html>
