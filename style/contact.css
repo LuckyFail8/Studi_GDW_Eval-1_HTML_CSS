@@ -13,11 +13,22 @@ svg{
 .container-contact{
     margin: 10px;
 }
+section{
+    margin-top: 35px;
+}
 .input{
     padding: 4px 0px 4px 3px;
+    border: 0px;
+    border-bottom: 1px solid #b4cbdf ;
+}
+ .input-area{
+    padding: 4px 0px 4px 3px;
+    border: 0px;
+    border-radius: 4px;
+    background: #c5d2dd;
 }
 .form-input{
-    margin-bottom: 8px;
+    margin: 14px 0px 14px 8px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -28,10 +39,12 @@ form{
 .input-icon{
     background: #0F3759;
     padding: 3.6px 4px;
+    border-radius: 50%;
 }
 .input-icon-area{
     background: #0F3759;
-    padding:  76px 3.6px;
+    padding: 3.6px 4px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
 }
@@ -43,4 +56,37 @@ form{
     text-transform: uppercase;
     padding: 2px 4px;
     border-radius: 4px ;
+}
+
+
+/* -------------  Responsive  ----------------- */
+
+@media screen and (min-width: 500px) {
+    
+    .form-group{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+}
+@media screen and (min-width: 600px) {
+    form{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .form-group{
+        margin: 10px;
+    }
+}
+    
+@media screen and (min-width: 950px) {
+    .container-contact{
+        margin: 40px;
+    }
+    .form-input{
+        margin: 14px 60px;
+    }
 }
