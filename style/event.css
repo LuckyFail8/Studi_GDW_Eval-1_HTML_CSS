@@ -1,3 +1,34 @@
+.sport{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.sport h2{
+    font-size: 25px;
+}
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+main{
+    justify-content: center;
+}
+.explain{
+    padding: 5px 10px;
+    margin: 0px 25px;
+    background: #e2d5d6;
+    border-radius: 4px;
+}
+.explain h3{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
 .card-event{
     display: inline-block;
     width: 300px;
@@ -6,7 +37,7 @@
     height: 533px; */
     border-radius: 10px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
 }
 
@@ -41,8 +72,35 @@
     max-height: 220px;
 }
 
-.sport{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+/* -------------  Responsive  ----------------- */
+@media screen and (min-width: 900px) {
+    main{
+        padding-top: 30px;
+    }
+    .event{
+        flex-direction: row;
+    }
+    .sport{
+        align-items: flex-start;
+        margin: 0px 20px;
+    }
+    .sport h2{
+        font-size: 35px;
+    }
+    .explain{
+        max-width: 570px;
+        padding: 15px;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    main {
+        justify-content: flex-start;
+        padding-left: 8%;
+    }
+    .sport h2{
+        margin-left: 120px;
+        margin-bottom: 30px;
+    }
+
 }
