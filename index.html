@@ -1,278 +1,278 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/LogoMLN.png">
-    <!-- Intégration de la librairie Boodstrap que je ne souhaite pas utiliser pour me familliariser 
-        avec flexbox et css grid
-    <link rel="stylesheet" href="bootstrap.min.css"> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style/header_footer.css">
-    <title>ES Moussy</title>
-</head>
-<body>
-    <div class="container">
-        <!-- Début du header -->
-        <nav>
-            <div class="area1">
-                <div class="logo">
-                    <img src="/images/LogoMLN.png" alt="Ecusson Moussy-Le-Neuf">
-                </div>
-            </div>
-            <div class="area2">
-                <div class="titre">
-                    <div class="assoc">
-                        <div>Espoir Sportif <br>de<br> Moussy-Le-Neuf
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/LogoMLN.png">
+        <!-- Intégration de la librairie Bootstrap que je ne souhaite pas utiliser pour me familliariser 
+            avec flexbox et css grid
+        <link rel="stylesheet" href="./style/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style/header_footer.css">
+        <title>ES Moussy</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Début du header -->
+            <nav>
+                <div class="area1">
+                    <div class="logo">
+                        <img src="./images/LogoMLN.png" alt="Ecusson Moussy-Le-Neuf">
                     </div>
                 </div>
-                <div class="navbar">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                            <div class="burger">
-                                <span></span>
+                <div class="area2">
+                    <div class="titre">
+                        <div class="assoc">
+                            <div>Espoir Sportif <br>de<br> Moussy-Le-Neuf
                             </div>
-                    </label>
-                    <ul class="menu">
-                        <li>
-                            <a class="active" href="index.html">Accueil</a>
-                            <ul class="sous-menu">
-                                <li><a href="#Qui_sommes-nous">Qui somme sous</a></li>
-                                <li><a href="#Nos_infrastructures">Nos infrastructure</a></li>
-                                <li><a href="#Découvrez_nos_activitées">Nos activitées</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/blog/event.html">Événement</a>
-                            <ul class="sous-menu">
-                                <li><a href="/blog/event.html#tennis">Tennis</a></li>
-                                <li><a href="/blog/event.html#foot">Foot</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="/blog/contact.html">Contacts</a>
-                        </li>
-                        <li>
-                            <a href="/blog/activitee.html">Nos activitées</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="navbar">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                                <div class="burger">
+                                    <span></span>
+                                </div>
+                        </label>
+                        <ul class="menu">
+                            <li>
+                                <a class="active" href="index.html">Accueil</a>
+                                <ul class="sous-menu">
+                                    <li><a href="#Qui_sommes-nous">Qui somme sous</a></li>
+                                    <li><a href="#Nos_infrastructures">Nos infrastructure</a></li>
+                                    <li><a href="#Découvrez_nos_activitées">Nos activitées</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./blog/event.html">Événement</a>
+                                <ul class="sous-menu">
+                                    <li><a href="./blog/event.html#tennis">Tennis</a></li>
+                                    <li><a href="./blog/event.html#foot">Foot</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./blog/contact.html">Contacts</a>
+                            </li>
+                            <li>
+                                <a href="./blog/activitee.html">Nos activitées</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- Fin du header -->
-        
-        <!-- Début du main -->
-        <main>
-            <div>
+            </nav>
+            <!-- Fin du header -->
+            
+            <!-- Début du main -->
+            <main>
                 <div>
-                    <div class="theme">
-                        <div class="title-theme">
-                            <h2 id="Evenement">Événements</h2>
-                        </div>
-                        <div class="container-theme">
-                            <div class="container-card">
-                                <div class="card-event">
-                                    <div class="top-card">
-                                        <div class="img-card">
-                                            <img src="images/event_tennis.jpg" alt="Tournoi balle verte">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="bottom-card">
-                                        <div>
-                                            <h3>Tournoi balle verte</h3>
-                                            <p>Catégorie 8-10 ans <br>
-                                                Mixte</p>
-                                            <a href="/blog/event.html#tennis">EN SAVOIR PLUS</a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                            
-                            <div class="container-card">
-                                <div class="card-event">
-                                    <div class="top-card">
-                                        <div class="img-card">
-                                            <img src="images/event_foot.jpg" alt="ESMvsVémars">
-                                        </div>
-                                    </div>
-                                
-                                    <div class="bottom-card">
-                                        <div>
-                                            <h3>Prochain match de Foot</h3>
-                                            <p>L'ESM reçoit le FC Vémars <br>
-                                                Championnat</p>
-                                            <a href="./blog/event.html#foot">EN SAVOIR PLUS</a>
-                                        </div>
-                                        
-                                    </div>
-
-                                <div>
-                            </div>        
-                            
-                        </div>
-                    </div>                    
-                </div>
-
-                <div class="theme">
-                    <div class="paragraphe">
-                        <h2 id="Qui_sommes-nous">Qui sommes-nous</h2>
-                        <p><strong>L'Espoir sportif Moussy-Le-Neuf</strong> est une association sportive de type loi 1901, déclarée en préfecture et bénéficiant d'un agrément sportif. 
-                        Créer en 1945 l'ESM est un club Omnisports regroupant 14 activité sportives et environ 640 adhérents chaque année.</p>
-                        
-                        <p>L'association est dirigé par un bureau directeur élu tout les 4 ans et dont le président actuel est Laurent ROUDAUT. 
-                        Chaque section dépendante juridiquement du club omnisports fonctionne comme une association unique avec un bureau élu par une assemblée générale mais qui n'a aucune existence juridique détenu par l'association "Espoir sportif Moussy-Le-Neuf". </p>
-                        
-                        <p>L'adresse administrative de l'Espoir sportif Moussy-Le-Neuf se trouve à la mairie de la ville, Pl. Charles de Gaulle.
-                        La ville de Moussy-Le-Neuf est par ailleurs le principal partenaire du CSM avec une subvention de fonctionnement importante et la mise à disposition de l'ensemble des structures sportives de la ville pour les entrainements et les compétitions mais aussi l'aide de l'ensemble des services municipaux.</p> 
-                        <p>Avec un budget de presque 1 millions d'euros et environ 640 adhérents l'ESM est l'un des plus importants club omnisports du département.
-                        Chaque année de nombreuses compétitions d'envergure départementale, régionale ou encore Nationale comme les Foulées Moussignole viennent animer la ville de Moussy-Le-Neuf pour en faire l'une des plus sportive du département.</p>
-                    </div>
-                </div>
-                
-                <div class="theme">
-                    <div class="bloc-infra">
-                        <h2 id="Nos_infrastructures">Nos infrastructures</h2>
-                        <p>Elles sont à la disposition des differentes association : </p>
-                        <div class="container-theme">
-                            <div class="container-card">
-                                <div class="card-infra">
-                                    <div class="top-card">
-                                        <div class="image-structure">
-                                            <img src="/images/Salle du chêne.webp" alt="La salle du chêne">
-                                        </div>
-                                    </div>
-                                    <div class="bottom-card">
-                                        <div><h3>La salle du chêne</h3></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="container-card">
-                                <div class="card-infra">
-                                    <div class="top-card">
-                                        <div class="image-structure">
-                                            <img src="/images/complexe sportif de l'érable.jpg" alt="Complexe sportif de l'Érable">
-                                        </div>
-                                    </div>
-                                    <div class="bottom-card">
-                                        <div><h3>Complexe sportif de l'Érable</h3></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="container-card">
-                                <div class="card-infra">
-                                    <div class="top-card">
-                                        <div class="image-structure">
-                                            <img src="/images/moussy-le-neuf-tennis.jpg" alt="Le Tennis Club Moussy-Le-Neuf">
-                                        </div>
-                                    </div>
-                                    <div class="bottom-card">
-                                        <div><h3>Le Tennis Club Moussy-Le-Neuf</h3></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="theme">
                     <div>
-                        <div>
-                            <h2 id="Découvrez_nos_activitées">Découvrez nos activitées</h2>
+                        <div class="theme">
+                            <div class="title-theme">
+                                <h2 id="Evenement">Événements</h2>
+                            </div>
+                            <div class="container-theme">
+                                <div class="container-card">
+                                    <div class="card-event">
+                                        <div class="top-card">
+                                            <div class="img-card">
+                                                <img src="./images/event_tennis.jpg" alt="Tournoi balle verte">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bottom-card">
+                                            <div>
+                                                <h3>Tournoi balle verte</h3>
+                                                <p>Catégorie 8-10 ans <br>
+                                                    Mixte</p>
+                                                <a href="./blog/event.html#tennis">EN SAVOIR PLUS</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="container-card">
+                                    <div class="card-event">
+                                        <div class="top-card">
+                                            <div class="img-card">
+                                                <img src="./images/event_foot.jpg" alt="ESMvsVémars">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="bottom-card">
+                                            <div>
+                                                <h3>Prochain match de Foot</h3>
+                                                <p>L'ESM reçoit le FC Vémars <br>
+                                                    Championnat</p>
+                                                <a href="./blog/event.html#foot">EN SAVOIR PLUS</a>
+                                            </div>
+                                            
+                                        </div>
+
+                                    <div>
+                                </div>        
+                                
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="theme">
+                        <div class="paragraphe">
+                            <h2 id="Qui_sommes-nous">Qui sommes-nous</h2>
+                            <p><strong>L'Espoir sportif Moussy-Le-Neuf</strong> est une association sportive de type loi 1901, déclarée en préfecture et bénéficiant d'un agrément sportif. 
+                            Créer en 1945 l'ESM est un club Omnisports regroupant 14 activité sportives et environ 640 adhérents chaque année.</p>
+                            
+                            <p>L'association est dirigé par un bureau directeur élu tout les 4 ans et dont le président actuel est Laurent ROUDAUT. 
+                            Chaque section dépendante juridiquement du club omnisports fonctionne comme une association unique avec un bureau élu par une assemblée générale mais qui n'a aucune existence juridique détenu par l'association "Espoir sportif Moussy-Le-Neuf". </p>
+                            
+                            <p>L'adresse administrative de l'Espoir sportif Moussy-Le-Neuf se trouve à la mairie de la ville, Pl. Charles de Gaulle.
+                            La ville de Moussy-Le-Neuf est par ailleurs le principal partenaire du CSM avec une subvention de fonctionnement importante et la mise à disposition de l'ensemble des structures sportives de la ville pour les entrainements et les compétitions mais aussi l'aide de l'ensemble des services municipaux.</p> 
+                            <p>Avec un budget de presque 1 millions d'euros et environ 640 adhérents l'ESM est l'un des plus importants club omnisports du département.
+                            Chaque année de nombreuses compétitions d'envergure départementale, régionale ou encore Nationale comme les Foulées Moussignole viennent animer la ville de Moussy-Le-Neuf pour en faire l'une des plus sportive du département.</p>
                         </div>
-                        <div class="container-theme">
-                            <div class="container-card">
-                                <div class="card-event">
-                                    <div class="top-card">
-                                        <div class="img-card">
-                                            <img src="images/LogoTennis.png" alt="Logo Tennis club Moussy-Le-Neuf">
+                    </div>
+                    
+                    <div class="theme">
+                        <div class="bloc-infra">
+                            <h2 id="Nos_infrastructures">Nos infrastructures</h2>
+                            <p>Elles sont à la disposition des differentes association : </p>
+                            <div class="container-theme">
+                                <div class="container-card">
+                                    <div class="card-infra">
+                                        <div class="top-card">
+                                            <div class="image-structure">
+                                                <img src="./images/Salle du chêne.webp" alt="La salle du chêne">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-card">
+                                            <div><h3>La salle du chêne</h3></div>
                                         </div>
                                     </div>
-                                    <div class="bottom-card">
-                                        <div>
-                                            <h3>Tennis</h3>
-                                            <p>Catégorie : 6 à 77 ans <br>
-                                                Tennis Club Moussy-Le-Neuf</p>
-                                            <a href="/blog/activitee.html">En savoir plus</a>
+                                </div>
+        
+                                <div class="container-card">
+                                    <div class="card-infra">
+                                        <div class="top-card">
+                                            <div class="image-structure">
+                                                <img src="./images/complexe sportif de l'érable.jpg" alt="Complexe sportif de l'Érable">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-card">
+                                            <div><h3>Complexe sportif de l'Érable</h3></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="container-card">
+                                    <div class="card-infra">
+                                        <div class="top-card">
+                                            <div class="image-structure">
+                                                <img src="./images/moussy-le-neuf-tennis.jpg" alt="Le Tennis Club Moussy-Le-Neuf">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-card">
+                                            <div><h3>Le Tennis Club Moussy-Le-Neuf</h3></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theme">
+                        <div>
+                            <div>
+                                <h2 id="Découvrez_nos_activitées">Découvrez nos activitées</h2>
+                            </div>
+                            <div class="container-theme">
+                                <div class="container-card">
+                                    <div class="card-event">
+                                        <div class="top-card">
+                                            <div class="img-card">
+                                                <img src="./images/LogoTennis.png" alt="Logo Tennis club Moussy-Le-Neuf">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-card">
+                                            <div>
+                                                <h3>Tennis</h3>
+                                                <p>Catégorie : 6 à 77 ans <br>
+                                                    Tennis Club Moussy-Le-Neuf</p>
+                                                <a href="./blog/activitee.html">En savoir plus</a>
+                                            </div>
+                                            
                                         </div>
                                         
                                     </div>
-                                    
                                 </div>
-                            </div>
-                            
-                            <div class="container-card">
-                                <div class="card-event">
-                                    <div class="top-card">
-                                        <div class="img-card">
-                                            <img src="images/LogoFoot.png" alt="Logo ESM Football">
+                                
+                                <div class="container-card">
+                                    <div class="card-event">
+                                        <div class="top-card">
+                                            <div class="img-card">
+                                                <img src="./images/LogoFoot.png" alt="Logo ESM Football">
+                                            </div>
+                                        </div>
+                                        <div class="bottom-card">
+                                            <div>
+                                                <h3>Football</h3> 
+                                                <p>Catégorie : 6 à 77 ans <br>
+                                                    Complexe de l'Érable</p>
+                                                <a href="./blog/activitee.html">En savoir plus</a>
+                                            </div>
+                                                
                                         </div>
                                     </div>
-                                    <div class="bottom-card">
-                                        <div>
-                                            <h3>Football</h3> 
-                                            <p>Catégorie : 6 à 77 ans <br>
-                                                Complexe de l'Érable</p>
-                                            <a href="/blog/activitee.html">En savoir plus</a>
-                                        </div>
-                                            
-                                    </div>
                                 </div>
                             </div>
+                            <div class="activite">
+                                <a href="./blog/activitee.html">Voir Toute les activitées</a>
+                            </div>                           
                         </div>
-                        <div class="activite">
-                            <a href="/blog/activitee.html">Voir Toute les activitées</a>
-                        </div>                           
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <!------------ Début du footer ------------>
-        <footer>
-            <div class="contenu-footer">
+            <!------------ Début du footer ------------>
+            <footer>
+                <div class="contenu-footer">
 
-                <div class="footer-service">
-                    <h3>Contact</h3>
-                    <ul class="liste-service">
-                        <li>Laurent Roudaut</li>
-                        <li>President de l'ESM</li>
-                        <li><a href="tel:+33668866886">06.68.86.68.86</a></li>
-                        <li><a href="mailto:esm.lebureau@email.com">esm.lebureau@email.com</a></li>
-                    </ul>
+                    <div class="footer-service">
+                        <h3>Contact</h3>
+                        <ul class="liste-service">
+                            <li>Laurent Roudaut</li>
+                            <li>President de l'ESM</li>
+                            <li><a href="tel:+33668866886">06.68.86.68.86</a></li>
+                            <li><a href="mailto:esm.lebureau@email.com">esm.lebureau@email.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-service">
+                        <h3>Nos réseaux sociaux</h3>
+                        <ul class="liste-social">
+                            <li>
+                                <a href="https://www.facebook.com/places/A-faire-a-Moussy-le-Neuf/105662939467023/" target="_blank" ><img class="icon-social" src="./images/icons8-facebook.svg" alt="Facebook icon"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/EsNeuf" target="_blank"><img class="icon-social" src="./images/icons8-twitter.svg" alt="Twitter icon"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/?hl=fr" target="_blank"><img class="icon-social" src="./images/icons8-instagram.svg" alt="instagram icon"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-service">
+                        <h3>Newsletter</h3>
+                        <form>
+                            <div class="news">
+                                <input class="newsletter" type="email" name="mail" placeholder="Votre mail..."/>
+                                <input class="btnsub" type="reset" value="M'abonner"/>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-                <div class="footer-service">
-                    <h3>Nos réseaux sociaux</h3>
-                    <ul class="liste-social">
-                        <li>
-                            <a href="https://www.facebook.com/places/A-faire-a-Moussy-le-Neuf/105662939467023/" target="_blank" ><img class="icon-social" src="/images/icons8-facebook.svg" alt="Facebook icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/EsNeuf" target="_blank"><img class="icon-social" src="/images/icons8-twitter.svg" alt="Twitter icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/?hl=fr" target="_blank"><img class="icon-social" src="/images/icons8-instagram.svg" alt="instagram icon"></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-service">
-                    <h3>Newsletter</h3>
-                    <form>
-                        <div class="news">
-                            <input class="newsletter" type="email" name="mail" placeholder="Votre mail..."/>
-                            <input class="btnsub" type="reset" value="M'abonner"/>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </footer>
-        <!------------ Fin du footer ------------>
-    </div>
-</body>
+            </footer>
+            <!------------ Fin du footer ------------>
+        </div>
+    </body>
 </html>

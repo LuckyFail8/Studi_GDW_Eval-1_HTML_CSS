@@ -101,5 +101,5 @@ main {
 /* -------------  Responsive  ----------------- */
 
 @media screen and (min-width: 600px) {
-
+/* Flexbox gère très bien le responsive sur cette page */ 
 }
